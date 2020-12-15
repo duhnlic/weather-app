@@ -17,7 +17,7 @@ For this assignment you'll be using the Open Weather Data API. In order to use i
 3. Test the url in browswer to verify that your key works. 
 
 ```
-api.openweathermap.org/data/2.5/weather?zip={ZIP CODE},us&appid={API KEY}
+api.openweathermap.org/data/2.5/weather?zip={ZIP CODE},us&units=imperial&appid={API KEY}
 ```
 
 ## Your page should have:
