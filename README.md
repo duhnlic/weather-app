@@ -8,5 +8,5 @@
 
 2) **Do:** [Open Weather Map](open-weather-map.md)
 
-3) **Submit:** via GitHub issues. Follow the instructions found in the [wiki](https://git.generalassemb.ly/SEIR-Margaret/class-recordings-and-info/blob/master/submitting-homework.md).
+3) **Submit:** via the [Homework Submissions Google Form](https://docs.google.com/forms/d/e/1FAIpQLSdX0ZLUuiAgusabQ0aydqvVIsbYnLkoRZyH8Wm4uDXNEv-tEA/viewform?usp=sf_link). Follow the instructions found in the [How to Submit Homework](https://git.generalassemb.ly/SEIR-Erica/class-info/wiki/How-to-Submit-Homework) page on the wiki.
 
