@@ -3,15 +3,13 @@ const input = document.querySelector("#user-input");
 const submit = document.querySelector("#submit")
 const weatherContainer = document.querySelector("#weather-container")
     //FUNCTION TO GET THE INFO FROM THE API
-const addWeatherDom = (data) => {
-    console.log(data);
-    const weatherDiv = `<div>${data.name} The Current Weather is ${data.weather.description}</div>`
-    weatherContainer.innerHTML = weatherDiv;
-}
 
 const addTempDom = (data) => {
     console.log(data);
-    const weatherDiv = `<div>${data.main.temp} With a High of ${data.main.temp_max} and a low of ${data.main.temp_min}
+    const weatherDiv = `<div>${data.name}</div>
+    </div>The Current Weather: ${data.weather[0].description}</div> 
+    <div>It is currently: ${data.main.temp}</div> 
+    <div>With a High of ${data.main.temp_max} and a low of ${data.main.temp_min}
         </div>`
     weatherContainer.innerHTML = weatherDiv;
 }
@@ -24,7 +22,7 @@ const weatherTime = async() => {
     try {
         const response = await fetch(`${root}${zipCode}${apiKey}`);
         const data = await response.json();
-        addWeatherDom(data);
+        // addWeatherDom(data);
         addTempDom(data);
     } catch (err) {
         console.log(err);
