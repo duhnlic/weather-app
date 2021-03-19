@@ -2,6 +2,60 @@
     /* position: absolute; */
 }
 
+body {
+    background-image: url(https://weatherbs-assests.s3.us-east-2.amazonaws.com/File_000.jpeg);
+    background-size: 100%;
+    background-color: #496799;
+    background-repeat: no-repeat;
+    position: relative;
+    size: 10px;
+}
+
+h1 {
+    font-family: 'Faster One', cursive;
+    display: flex;
+    justify-content: center;
+    color: #C6362d;
+    font-size: 5rem;
+    text-shadow: -1px 1px 16px #fff, 1px 1px 16px #f1f1f1, 1px -1px 0 #f1f1f1, -1px -1px 0 #f1f1f1;
+    height: 6rem;
+    margin-top: -1rem;
+    margin-bottom: 27rem;
+    max-width: 100%;
+}
+
 div {
-    /* position */
+    font-family: 'Comfortaa', cursive;
+    size: 1rem;
+    font-size: large;
+    margin: .5rem;
+    color: rgb(255, 254, 177);
+    outline: grey;
+    text-shadow: -1px 1px 16px rgb(95, 155, 155), 1px 1px 16px rgb(95, 155, 155), 1px -1px 0 rgb(95, 155, 155), -1px -1px 0 rgb(95, 155, 155);
+}
+
+#submit {
+    height: 2rem;
+    width: 2.5rem;
+}
+
+.input-field {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+#user_input {}
+
+#weather-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#city {
+    display: flex;
+    justify-content: center;
 }

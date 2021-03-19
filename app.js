@@ -1,16 +1,19 @@
 //HTML CACHED ELEMENTS
+
 const input = document.querySelector("#user-input");
 const submit = document.querySelector("#submit")
 const weatherContainer = document.querySelector("#weather-container")
 
 const addTempDom = (data) => {
     console.log(data);
-    const weatherDiv = `<div>${data.name}</div>
+    const weatherDiv = `<div #city>${data.name}</div>
     </div>The Current Weather: ${data.weather[0].description}</div> 
     <div>It is currently:</div>
     <div id="temp"> ${data.main.temp}</div> 
     <div>With a High of ${data.main.temp_max} and a low of ${data.main.temp_min}
     </div>`
+        // <div>Sunrise: ${moment(data.sys.sunrise)} | Sunset: ${moment(data.sys.sunset)}`
+
     weatherContainer.innerHTML = weatherDiv;
 }
 
