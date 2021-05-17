@@ -20,11 +20,12 @@ const addTempDom = (data) => {
 //FUNCTION TO GET THE INFO FROM THE API
 const weatherTime = async() => {
 
-    const apiKey = ",us&units=imperial&appid=39da52614d4a14d697506d6ed598e957";
+    const preKey = ",us&units=imperial&appid=";
+    const apiKey = process.env.SECRET_KEY
     const zipCode = input.value;
     const root = "https://api.openweathermap.org/data/2.5/weather?zip=";
     try {
-        const response = await fetch(`${root}${zipCode}${apiKey}`);
+        const response = await fetch(`${root}${zipCode}${preKey}${apiKey}`);
         const data = await response.json();
         // addWeatherDom(data);
         addTempDom(data);
