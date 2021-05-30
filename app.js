@@ -21,9 +21,10 @@ const addTempDom = (data) => {
 const weatherTime = async() => {
 
     const preKey = ",us&units=imperial&appid=";
-    const apiKey = process.env.SECRET_KEY
+    const apiKey = SECRET_KEY
     const zipCode = input.value;
     const root = "https://api.openweathermap.org/data/2.5/weather?zip=";
+    console.log(`${root}${zipCode}${preKey}${apiKey}`)
     try {
         const response = await fetch(`${root}${zipCode}${preKey}${apiKey}`);
         const data = await response.json();

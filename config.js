@@ -1,0 +1,2 @@
+
+const SECRET_KEY = "39da52614d4a14d697506d6ed598e957"
